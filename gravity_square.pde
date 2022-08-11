@@ -1,6 +1,7 @@
-float x = 233.33; 
-float y = 0; 
-float speed = 0; 
+//defining the values for color, speed, and square height
+float x = 233.33;
+float y = 0;
+float speed = 0;
 float speed2 = 0;
 float y2 = height;
 float gravity = 0.1;
@@ -18,8 +19,8 @@ void setup() {
 
 void draw() {
   background(rb,gb,bb);
-    
-   
+
+
   // draw the ball
   noStroke();
   rect(x+208.33,y-50,50,50);
@@ -31,7 +32,7 @@ void draw() {
   y2 = (y2 + speed2);
   speed = speed + gravity;
   speed2 = speed2 - gravity;
-     
+
   if (y > height || y < 0) {
     //color stuff
     float r = random(255);
@@ -52,10 +53,5 @@ void draw() {
       speed2 = speed2 - 15;
     }
   }
-  
+
 }
-
-
-  
-  
-  
