@@ -30,13 +30,13 @@ void draw() {
   //this function changes the color of the circle every time it hits the bottom of the frame
  
  //setting background to refresh with draw (changes colors when ball bounces)
-  background(r -200, g - 200, b - 200);
+ //color is made by mixing up RGB values! r = b, g = r, etc.
+  background(b, r , g);
   
     if (y >= height-15){
       r = random(255);
       b = random(255);
       g = random(255);
-      background(r -200, g - 200, b - 200);
     }
     
   fill(r, g, b); 
