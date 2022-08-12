@@ -63,7 +63,7 @@ void draw() {
   }
   
   if (y > height-15) {
-    if (abs(speed) > 4) {
+    if (speed > 4) {
   //once the ball hits the bottom of the screen, it should bounce back up.
   //reversing the speed of the ball allows the y axis change to become negative, meaning the ball moves upwards
   //multiplying by -0.85 mimics a dampening of speed that would occur in real life
