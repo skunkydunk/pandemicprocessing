@@ -8,7 +8,8 @@ float speed = 0;       //speed of the square
 float gravity = 0.05;   //creating a gravity multiplier for later use with speed
 float r = 50;          //assigning the color of the circle
 float g = 200;
-float b = 50;
+float b = 50; 
+
 
 
 void setup() {
@@ -17,22 +18,25 @@ void setup() {
   size (500, 500);
   
   fill (200);
-  ;
+  
+ 
   
 }
 
 void draw() { 
 
-  //setting background to refresh with draw
-  background(0);
  
   //defining the color of the circle
   //this function changes the color of the circle every time it hits the bottom of the frame
  
+ //setting background to refresh with draw (changes colors when ball bounces)
+  background(r -200, g - 200, b - 200);
+  
     if (y >= height-15){
       r = random(255);
       b = random(255);
       g = random(255);
+      background(r -200, g - 200, b - 200);
     }
     
   fill(r, g, b); 
